@@ -1,8 +1,9 @@
 # NOOR BOT
+NOOR BOT is a mental health chatbot built using the GPT-3 Da Vinci model fine-tuned on a mental health dataset. It aims to provide support, guidance, and resources to individuals seeking help or information related to mental health.
 
 ![Noor Bot](NOOR.png)
 
-NOOR BOT is a mental health chatbot built using the GPT-3 Da Vinci model fine-tuned on a mental health dataset. It aims to provide support, guidance, and resources to individuals seeking help or information related to mental health.
+
 
 ## Features
 
@@ -20,39 +21,50 @@ NOOR BOT is built using the GPT-3 Da Vinci model, which is trained on a diverse 
 
 The model has been fine-tuned on the mental health dataset to improve its understanding and response generation specifically for mental health-related conversations. It has been trained to handle a variety of topics, including anxiety, depression, stress management, self-care, and more.
 
-## Getting Started
+## Prerequisites
 
-To use NOOR BOT locally or integrate it into your own project, follow the steps below:
+To run NOOR BOT locally, you need to have the following installed:
 
-1. **Clone the Repository:** Clone this repository to your local machine using the following command:
+- Python 3.x
+- OpenAI Python library
 
-   ```
-   git clone https://github.com/your-username/noor-bot.git
-   ```
+## Installation
 
-2. **Install Dependencies:** Navigate to the project directory and install the required dependencies by running:
-
-   ```
-   npm install
-   ```
-
-3. **Set Up GPT-3 API:** Obtain an API key for the GPT-3 model by signing up on the OpenAI website. Once you have the API key, create a `.env` file in the project directory and add the following line:
+1. Clone the Repository:
 
    ```
-   API_KEY=your_gpt3_api_key
+   git clone https://github.com/Crypto47/NOOR
    ```
 
-4. **Start the Bot:** Run the following command to start the NOOR BOT:
+2. Set up a Python Virtual Environment (optional but recommended):
 
    ```
-   npm start
+   python3 -m venv env
+   source env/bin/activate
    ```
 
-   The bot will be accessible at `http://localhost:3000` by default.
+3. Install Dependencies:
 
-## Demo
+   ```
+   pip install openai
+   ```
 
-To see a live demo of NOOR BOT in action, visit [Demo Link](https://your-demo-link).
+4. Set up OpenAI API:
+
+   - Sign up on the OpenAI website to obtain an API key.
+   - Set the `OPENAI_API_KEY` environment variable or add it to a `.env` file in the project directory.
+
+5. Run the Bot:
+
+   ```
+   python bot.py
+   ```
+
+## Usage
+
+Once the bot is running, you can interact with it by sending messages or queries. The bot will process your input and generate a response based on its training.
+
+You can modify the `bot.py` file to customize the behavior of the chatbot or add additional functionalities as per your requirements.
 
 ## Contributions
 
@@ -66,17 +78,7 @@ This project is licensed under the [MIT License](LICENSE). Feel free to use and 
 
 ## Acknowledgments
 
-We would like to express our gratitude to the following resources and libraries that have contributed to the development of NOOR BOT:
-
-- [OpenAI GPT-3](https://openai.com)
-- [Node.js](https://nodejs.org/)
-- [Express.js](https://expressjs.com/)
-- [dotenv](https://github.com/motdotla/dotenv)
-- [Axios](https://github.com/axios/axios)
-
-Special thanks to the mental health community for providing
-
- valuable insights and resources for training the chatbot.
+We would like to express our gratitude to OpenAI for providing the GPT-3 model and to the kaggle community for providing valuable resources and datasets for training the chatbot.
 
 ## Contact
 
@@ -84,4 +86,6 @@ If you have any questions, suggestions, or feedback, please feel free to reach o
 
 ---
 
-*Note: NOOR BOT is not a substitute for professional mental health advice. It is intended for informational purposes only. If you or someone you know is experiencing a mental health crisis, please seek professional help or contact a helpline in your country.*
+*Note: NOOR BOT is not a substitute for professional mental health advice. It is intended for informational purposes only. If you or someone you know is experiencing a mental health crisis, please seek professional
+
+ help or contact a helpline in your country.*
