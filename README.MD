@@ -1,6 +1,6 @@
 # NOOR BOT
 
-![Noor Bot](.png)
+![NOOR.png)
 
 NOOR BOT is a mental health chatbot built using the GPT-3 Da Vinci model fine-tuned on a mental health dataset. It aims to provide support, guidance, and resources to individuals seeking help or information related to mental health.
 
